@@ -41,14 +41,14 @@
           <table>
             <thead>
               <tr>
-                <th>送信内容</th>
+                <th colspan=2>送信内容</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-            　<% company = params["company"]%>
-               <th>会社名</th>
-               <td><%=company%></td>
+                <% company = params["company"]%>
+                <th>会社名</th>
+                <td><%=company%></td>
               </tr>
               <tr>
                <% name = params['name'] %>
@@ -59,7 +59,7 @@
                <% mail = params["mail"]%>
                <th>メール</th>
                <td><%=mail%></td>
-              </td>
+              </tr>
               <tr>
                <% tel = params["tel"]%>
                <th>電話番号</th>
